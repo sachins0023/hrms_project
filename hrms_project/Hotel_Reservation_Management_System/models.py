@@ -41,29 +41,29 @@ class Booking(models.Model):
     def check_out_date(self):
         return self.check_in_date + timedelta(days = self.number_of_nights_of_stay)
 
-    @property
+    # @property
     def room_number(self):
         return self.room.room_number
 
-    @property
+    # @property
     def room_type(self):
         return self.room.room_type
 
-    @property
+    # @property
     def room_price_per_night(self):
         return self.room.room_price_per_night()
 
-    @property
+    # @property
     def guest_name(self):
         return self.guest.name
 
-    @property
+    # @property
     def contact_number(self):
         return self.guest.contact_number
 
-    @property
+    # @property
     def cost_of_stay(self):
-        return self.number_of_nights_of_stay * self.room_price_per_night
+        return self.number_of_nights_of_stay * self.room_price_per_night()
 
     def __str__(self):
         return 'booking '+str(self.id)

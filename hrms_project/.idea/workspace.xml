@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6d30920-14ea-4459-8d6b-d5e635544d55" name="Default Changelist" comment="" />
+    <list default="true" id="f6d30920-14ea-4459-8d6b-d5e635544d55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Reservation_Management_System/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Reservation_Management_System/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Reservation_Management_System/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Reservation_Management_System/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Reservation_Management_System/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Reservation_Management_System/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +53,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
