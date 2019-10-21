@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'Hotel_Reservation_Management_System',
     'django.contrib.admin',
     'django.contrib.auth',

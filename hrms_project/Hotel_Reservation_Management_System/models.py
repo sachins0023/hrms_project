@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime, timedelta
 from django.dispatch import receiver
 from django.db.models.signals import pre_save, post_save
+
 # Create your models here.
 
 class Room(models.Model):
@@ -19,6 +20,7 @@ class Room(models.Model):
             return 2500.0
         elif self.room_type == 'Premium':
             return 4000.0
+
 
 class Guest(models.Model):
     name = models.CharField(max_length = 50)

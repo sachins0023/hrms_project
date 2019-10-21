@@ -3,7 +3,6 @@ from Hotel_Reservation_Management_System.models import *
 from django import forms
 import re
 
-
 # Register your models here.
 
 class RoomAdminForm(forms.ModelForm):
