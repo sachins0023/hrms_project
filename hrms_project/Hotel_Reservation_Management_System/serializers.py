@@ -14,4 +14,7 @@ class GuestSerializers(serializers.ModelSerializer):
 class BookingSerializers(serializers.ModelSerializer):
     class Meta:
         model = Booking
-        fields = Booking('id', 'room', 'guest', 'number_of_guest', 'check_in_date', 'checked_in', 'number_of nights of stay', 'checkout_out', "cancel_booking",)
+        fields = ('id', 'room', 'guest', 'number_of_guest', 'check_in_date', 'checked_in', 'number_of_nights_of_stay', 'checked_out', "cancel_booking",)
+
+# class RoomSerializers(serializers.Serializer):
+    # id = serializers.I

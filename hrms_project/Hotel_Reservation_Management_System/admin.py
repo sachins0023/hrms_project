@@ -124,11 +124,11 @@ class BookingAdminForm(forms.ModelForm):
                         # ((self.cleaned_data.get('check_in_date') <= Booking.objects.exclude(id = self.instance.id).filter(room = room, checked_out = False)[0].check_in_date) and \
                         #  (self.cleaned_data.get('check_out_date') >= Booking.objects.exclude(id = self.instance.id).filter(room = room, checked_out = False)[0].check_out_date())):
                     raise forms.ValidationError("Room already occupied. Please assign a different room for the guest.")
-            elif room.occupied == False and self.cleaned_data.get('checked_out') == False:
+            """elif room.occupied == False and self.cleaned_data.get('checked_out') == False:
                 # if self.cleaned_data.get('check_out_date') is not None:
                 if self.cleaned_data.get('check_in_date') <= Booking.objects.exclude(id = self.instance.id).filter(room = room, checked_out = False).get(guest = guest).check_in_date:
                     if self.cleaned_data.get('check_in_date')+timedelta(days = number_of_nights_of_stay) >= Booking.objects.exclude(id = self.instance.id).filter(room = room, checked_out = False).get(guest = guest).check_in_date:
-                        raise forms.ValidationError("Room occupied during some of the dates of duration of stay. Please select a different room")
+                        raise forms.ValidationError("Room occupied during some of the dates of duration of stay. Please select a different room")"""
 
         if guest is not None:
             if any(Booking.objects.exclude(id = self.instance.id).filter(guest = guest, checked_out = False)):
